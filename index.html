@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>IronPulse Fitness</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<style>
+  .nav-item {
+    transition: all 0.3s ease;
+  }
+
+  .nav-item:hover {
+    transform: translateY(-4px);
+    text-shadow: 0 0 8px rgba(239, 68, 68, 0.8);
+  }
+</style>
+
+<body class="bg-gray-100">
+
+ <!-- NAVBAR -->
+<nav class="bg-black text-white sticky top-0 z-50">
+  <div class="max-w-7xl mx-auto px-4">
+    <div class="flex justify-between items-center h-16">
+
+      <!-- Logo -->
+      <div class="text-2xl font-bold text-red-500">
+        IronPulse Fitness
+      </div>
+
+      <!-- Menu -->
+      <ul class="hidden md:flex space-x-8 font-medium">
+        <li><a href="#" class="nav-item hover:text-red-500 inline-block">Home</a></li>
+        <li><a href="#" class="nav-item hover:text-red-500 inline-block">Sign up</a></li>
+        <li><a href="#" class="nav-item hover:text-red-500 inline-block">Programs</a></li>
+        <li><a href="#" class="nav-item hover:text-red-500 inline-block">Packages</a></li>
+        <li><a href="#" class="nav-item hover:text-red-500 inline-block">Team</a></li>
+        <li><a href="#" class="nav-item hover:text-red-500 inline-block">About</a></li>
+        <li><a href="#" class="nav-item hover:text-red-500 inline-block">Contact</a></li>
+      </ul>
+
+      <!-- Join Button -->
+      <div class="hidden md:block">
+        <a href="#" class="bg-red-500 px-4 py-2 rounded hover:bg-red-600 transition hover:shadow-[0_0_15px_rgba(239,68,68,0.8)]">
+          Join Now
+        </a>
+      </div>
+
+    </div>
+  </div>
+</nav>
+<div class="h-20"></div>
+  <!-- HERO SECTION -->
+<section class="relative h-[90vh] flex items-center justify-center text-white">
+
+  <!-- Background -->
+  <div class="absolute inset-0">
+    <img src="https://images.unsplash.com/photo-1554284126-aa88f22d8b74?auto=format&fit=crop&w=1600&q=80"
+         class="w-full h-full object-cover" alt="Gym">
+    <div class="absolute inset-0 bg-black/70"></div>
+  </div>
+
+  <!-- Content -->
+  <div class="relative z-10 text-center max-w-4xl px-6">
+    <h1 class="text-4xl md:text-6xl font-extrabold uppercase tracking-wide">
+      Build Your <span class="text-red-500">Perfect Body</span>
+    </h1>
+
+    <p class="mt-6 text-lg md:text-xl text-gray-300">
+      Join IronPulse Fitness and transform your life with professional trainers and modern equipment.
+    </p>
+
+    <div class="mt-10 flex flex-col md:flex-row gap-4 justify-center">
+      <a href="#" class="bg-red-500 px-8 py-3 rounded-lg text-lg font-semibold hover:bg-red-600 transition hover:shadow-[0_0_25px_rgba(239,68,68,0.9)]">
+        Get Started
+      </a>
+      <a href="#" class="border border-white px-8 py-3 rounded-lg text-lg font-semibold hover:bg-white hover:text-black transition">
+        View Programs
+      </a>
+    </div>
+  </div>
+
+</section>
+<!-- PROGRAMS SECTION -->
+<section id="programs" class="py-20 bg-gray-100">
+
+  <div class="max-w-7xl mx-auto px-6">
+
+    <!-- Section Title -->
+    <div class="text-center mb-12">
+      <h2 class="text-3xl md:text-4xl font-bold">
+        Our <span class="text-red-500">Programs</span>
+      </h2>
+      <p class="mt-4 text-gray-600">
+        Choose the perfect training program for your goals.
+      </p>
+    </div>
+
+    <!-- Programs Grid -->
+    <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
+
+      <!-- Card 1 -->
+      <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:-translate-y-2 transition duration-300">
+        <img src="https://images.unsplash.com/photo-1583454110551-21f2fa2afe61?auto=format&fit=crop&w=800&q=80" class="h-48 w-full object-cover" alt="">
+        <div class="p-6">
+          <h3 class="text-xl font-bold">Bodybuilding</h3>
+          <p class="mt-2 text-gray-600">
+            Build muscle, increase strength, and sculpt your body.
+          </p>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:-translate-y-2 transition duration-300">
+        <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?auto=format&fit=crop&w=800&q=80" class="h-48 w-full object-cover" alt="">
+        <div class="p-6">
+          <h3 class="text-xl font-bold">Weight Loss</h3>
+          <p class="mt-2 text-gray-600">
+            Burn fat and get lean with our cardio & HIIT programs.
+          </p>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:-translate-y-2 transition duration-300">
+        <img src="https://images.unsplash.com/photo-1546483875-ad9014c88eba?auto=format&fit=crop&w=800&q=80" class="h-48 w-full object-cover" alt="">
+        <div class="p-6">
+          <h3 class="text-xl font-bold">Yoga & Flexibility</h3>
+          <p class="mt-2 text-gray-600">
+            Improve flexibility, balance, and mental focus.
+          </p>
+        </div>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:-translate-y-2 transition duration-300">
+        <img src="https://images.unsplash.com/photo-1517964603305-11c0f6f66012?auto=format&fit=crop&w=800&q=80" class="h-48 w-full object-cover" alt="">
+        <div class="p-6">
+          <h3 class="text-xl font-bold">CrossFit</h3>
+          <p class="mt-2 text-gray-600">
+            High-intensity functional training for full body fitness.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+<!-- PACKAGES SECTION -->
+<section id="packages" class="py-20 bg-white">
+
+  <div class="max-w-7xl mx-auto px-6">
+
+    <!-- Section Title -->
+    <div class="text-center mb-12">
+      <h2 class="text-3xl md:text-4xl font-bold">
+        Our <span class="text-red-500">Packages</span>
+      </h2>
+      <p class="mt-4 text-gray-600">
+        Choose the plan that fits your fitness journey.
+      </p>
+    </div>
+
+    <!-- Pricing Grid -->
+    <div class="grid gap-8 md:grid-cols-3">
+
+      <!-- Basic Plan -->
+      <div class="border rounded-xl p-8 text-center hover:shadow-xl transition hover:-translate-y-2">
+        <h3 class="text-xl font-bold">Basic</h3>
+        <p class="text-gray-500 mt-2">Perfect for beginners</p>
+
+        <div class="my-6">
+          <span class="text-4xl font-bold">$19</span>
+          <span class="text-gray-500">/month</span>
+        </div>
+
+        <ul class="space-y-3 text-gray-600">
+          <li>✔ Gym Access</li>
+          <li>✔ Cardio Area</li>
+          <li>✔ Free Water</li>
+          <li class="line-through text-gray-400">Personal Trainer</li>
+          <li class="line-through text-gray-400">Diet Plan</li>
+        </ul>
+
+        <a href="#" class="block mt-8 bg-black text-white py-3 rounded-lg hover:bg-gray-800 transition">
+          Choose Plan
+        </a>
+      </div>
+
+      <!-- Pro Plan (Featured) -->
+      <div class="border-2 border-red-500 rounded-xl p-8 text-center shadow-xl scale-105">
+        <div class="text-sm bg-red-500 text-white inline-block px-3 py-1 rounded-full mb-4">
+          Best Value
+        </div>
+
+        <h3 class="text-xl font-bold">Pro</h3>
+        <p class="text-gray-500 mt-2">Most popular choice</p>
+
+        <div class="my-6">
+          <span class="text-4xl font-bold">$39</span>
+          <span class="text-gray-500">/month</span>
+        </div>
+
+        <ul class="space-y-3 text-gray-600">
+          <li>✔ Gym Access</li>
+          <li>✔ Cardio Area</li>
+          <li>✔ Personal Trainer</li>
+          <li>✔ Diet Plan</li>
+          <li>✔ Supplement Guide</li>
+        </ul>
+
+        <a href="#" class="block mt-8 bg-red-500 text-white py-3 rounded-lg hover:bg-red-600 transition hover:shadow-[0_0_20px_rgba(239,68,68,0.8)]">
+          Choose Plan
+        </a>
+      </div>
+
+      <!-- Elite Plan -->
+      <div class="border rounded-xl p-8 text-center hover:shadow-xl transition hover:-translate-y-2">
+        <h3 class="text-xl font-bold">Elite</h3>
+        <p class="text-gray-500 mt-2">For serious athletes</p>
+
+        <div class="my-6">
+          <span class="text-4xl font-bold">$59</span>
+          <span class="text-gray-500">/month</span>
+        </div>
+
+        <ul class="space-y-3 text-gray-600">
+          <li>✔ All Pro Features</li>
+          <li>✔ 1-on-1 Coaching</li>
+          <li>✔ Custom Diet Plan</li>
+          <li>✔ Priority Support</li>
+          <li>✔ VIP Area</li>
+        </ul>
+
+        <a href="#" class="block mt-8 bg-black text-white py-3 rounded-lg hover:bg-gray-800 transition">
+          Choose Plan
+        </a>
+      </div>
+
+    </div>
+  </div>
+</section>
+<!-- TEAM SECTION -->
+<section id="team" class="py-20 bg-gray-100">
+  <div class="max-w-7xl mx-auto px-6">
+
+    <!-- Section Title -->
+    <div class="text-center mb-12">
+      <h2 class="text-3xl md:text-4xl font-bold">
+        Meet Our <span class="text-red-500">Trainers</span>
+      </h2>
+      <p class="mt-4 text-gray-600">
+        Professional trainers to help you achieve your goals
+      </p>
+    </div>
+
+    <!-- Team Grid -->
+    <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
+
+      <!-- Trainer 1 -->
+      <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:-translate-y-2 transition duration-300">
+        <img src="https://images.unsplash.com/photo-1594737625785-9c6e4a3c2438?auto=format&fit=crop&w=500&q=80" class="h-64 w-full object-cover" alt="Trainer">
+        <div class="p-6 text-center">
+          <h3 class="text-xl font-bold">John Carter</h3>
+          <p class="text-gray-500 mt-1">Strength Coach</p>
+          <div class="flex justify-center mt-4 space-x-3">
+            <a href="#" class="text-gray-500 hover:text-red-500 transition">🐦</a>
+            <a href="#" class="text-gray-500 hover:text-red-500 transition">📸</a>
+            <a href="#" class="text-gray-500 hover:text-red-500 transition">💼</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Trainer 2 -->
+      <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:-translate-y-2 transition duration-300">
+        <img src="https://images.unsplash.com/photo-1594737625854-f9c2ef8b06a1?auto=format&fit=crop&w=500&q=80" class="h-64 w-full object-cover" alt="Trainer">
+        <div class="p-6 text-center">
+          <h3 class="text-xl font-bold">Sarah Lee</h3>
+          <p class="text-gray-500 mt-1">Yoga Instructor</p>
+          <div class="flex justify-center mt-4 space-x-3">
+            <a href="#" class="text-gray-500 hover:text-red-500 transition">🐦</a>
+            <a href="#" class="text-gray-500 hover:text-red-500 transition">📸</a>
+            <a href="#" class="text-gray-500 hover:text-red-500 transition">💼</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Trainer 3 -->
+      <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:-translate-y-2 transition duration-300">
+        <img src="https://images.unsplash.com/photo-1594737625876-6c8a4b3c2b5a?auto=format&fit=crop&w=500&q=80" class="h-64 w-full object-cover" alt="Trainer">
+        <div class="p-6 text-center">
+          <h3 class="text-xl font-bold">Mike Johnson</h3>
+          <p class="text-gray-500 mt-1">CrossFit Coach</p>
+          <div class="flex justify-center mt-4 space-x-3">
+            <a href="#" class="text-gray-500 hover:text-red-500 transition">🐦</a>
+            <a href="#" class="text-gray-500 hover:text-red-500 transition">📸</a>
+            <a href="#" class="text-gray-500 hover:text-red-500 transition">💼</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Trainer 4 -->
+      <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:-translate-y-2 transition duration-300">
+        <img src="https://images.unsplash.com/photo-1594737625905-d5f7a5c2b34a?auto=format&fit=crop&w=500&q=80" class="h-64 w-full object-cover" alt="Trainer">
+        <div class="p-6 text-center">
+          <h3 class="text-xl font-bold">Emily Davis</h3>
+          <p class="text-gray-500 mt-1">Nutrition Expert</p>
+          <div class="flex justify-center mt-4 space-x-3">
+            <a href="#" class="text-gray-500 hover:text-red-500 transition">🐦</a>
+            <a href="#" class="text-gray-500 hover:text-red-500 transition">📸</a>
+            <a href="#" class="text-gray-500 hover:text-red-500 transition">💼</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+<!-- ABOUT SECTION -->
+<section id="about" class="py-20 bg-white">
+  <div class="max-w-7xl mx-auto px-6 md:flex md:items-center md:gap-12">
+
+    <!-- Image -->
+    <div class="md:w-1/2 mb-8 md:mb-0">
+      <img src="https://images.unsplash.com/photo-1571019613454-1dbf3e1f3cde?auto=format&fit=crop&w=800&q=80" 
+           alt="About Gym" 
+           class="rounded-xl shadow-lg w-full object-cover">
+    </div>
+
+    <!-- Text -->
+    <div class="md:w-1/2">
+      <h2 class="text-3xl md:text-4xl font-bold mb-4">
+        About <span class="text-red-500">IronPulse Fitness</span>
+      </h2>
+      <p class="text-gray-600 mb-4">
+        IronPulse Fitness was founded with a single mission: to help people transform their lives through fitness. Our state-of-the-art equipment and professional trainers ensure every member reaches their goals safely and efficiently.
+      </p>
+      <p class="text-gray-600 mb-6">
+        Whether you’re starting your fitness journey, building strength, or improving flexibility, we have a program tailored just for you. Join us and become part of a community that motivates, challenges, and inspires.
+      </p>
+
+      <a href="#signup" class="bg-red-500 px-8 py-3 rounded-lg text-white font-semibold hover:bg-red-600 transition hover:shadow-[0_0_25px_rgba(239,68,68,0.9)]">
+        Join Us Today
+      </a>
+    </div>
+
+  </div>
+</section>
+
+</body>
+</html>
